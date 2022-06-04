@@ -1,0 +1,57 @@
+<!--Atividade: Criar uma página web que permita executar cálculos aritméticos (calculadora)
+	Flavio Alison Simas Lopes
+	em 02/01/2021
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+</head>
+<body bgcolor= "white" text= "blue">
+
+	<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky"><input type="button" value="1" onClick="document.calculator.ans.value+='1'"></th>
+    <th class="tg-0lax"><input type="button" value="2" onClick="document.calculator.ans.value+='2'"></th>
+    <th class="tg-0lax"><input type="button" value="3" onClick="document.calculator.ans.value+='3'"></th>
+    <th class="tg-0lax"><input type="button" value="4" onClick="document.calculator.ans.value+='4'"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><input type="button" value="5" onClick="document.calculator.ans.value+='5'"></td>
+    <td class="tg-0lax"><input type="button" value="6" onClick="document.calculator.ans.value+='6'"></td>
+    <td class="tg-0lax"><input type="button" value="7" onClick="document.calculator.ans.value+='7'"></td>
+    <td class="tg-0lax"><input type="button" value="8" onClick="document.calculator.ans.value+='8'"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><input type="button" value="9" onClick="document.calculator.ans.value+='9'"></td>
+    <td class="tg-0lax"><input type="button" value="0" onClick="document.calculator.ans.value+='0'"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><input type="button" value="+" onClick="document.calculator.ans.value+='+'"></td>
+    <td class="tg-0lax"><input type="button" value="-" onClick="document.calculator.ans.value+='-'"></td>
+    <td class="tg-0lax"><input type="button" value="*" onClick="document.calculator.ans.value+='*'"></td>
+    <td class="tg-0lax"><input type="button" value="/" onClick="document.calculator.ans.value+='/'"></td>
+  </tr>
+</tbody>
+</table>
+
+	<form name="calculator" >
+		<input type="reset" value="Reset">
+		<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">Ans = <input type="textfield" name="ans" value="">
+	</form>
+</body>
+</html>
